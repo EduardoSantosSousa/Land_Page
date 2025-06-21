@@ -1,6 +1,8 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
+
 }
 
 
@@ -64,4 +66,35 @@ a {
 
 p{
     margin-bottom: 3rem;
+}
+
+.resposive-table{
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+table{
+    min-width: 360px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td{ 
+    white-space: nowrap;
+    border: 0.1rem solid var(--light-gray-color);
+    text-align: left;
+    padding: 1rem 5rem; /* Aumenta o espaçamento horizontal */
+
+}
+
+table caption{
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+tfoot td, table th{
+    background-color: var(--light-gray-color);
 }
